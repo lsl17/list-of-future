@@ -3,7 +3,7 @@ on:
   schedule:
     # Makes commit(s) at 9am daily
     # Change to whatever cron expression you like
-    - cron: "30 4 * * *"
+    - cron: "0 0 * * *"
 
 jobs:
   lit-job:
