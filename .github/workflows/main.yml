@@ -3,12 +3,12 @@ on:
   schedule:
     # Makes commit(s) at 9am daily
     # Change to whatever cron expression you like
-    - cron: "0 9 * * *"
+    - cron: "0 1 * * *"
 
 jobs:
   lit-job:
     env:
-      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      GITHUB_TOKEN: ${{ secrets.METRICS_TOKEN  }}
     runs-on: ubuntu-latest
     name: A job to get you lit
     steps:
@@ -19,9 +19,9 @@ jobs:
         with:
           # Defines the range of number of commits
           # Change to your desierd lower and upper bound
-          lower-bound: 0
-          upper-bound: 6
+          lower-bound: 6
+          upper-bound: 12
           # Change to your GitHub username
-          user-name: YourGithubUserName
+          user-name: X-itachi-X
           # Change to your email used for GitHub account
-          user-email: YourEmail4Github
+          user-email: ankitprakash2909@gmail.com
